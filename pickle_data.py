@@ -15,7 +15,7 @@ with open(input_filename) as f:
 time = np.arange(0,5.81*len(force_data),5.81,dtype=np.float32)
 
 # print(len(time))
-print(len(force_data))
+# print(len(force_data))
 
 writer = csv.writer(output_file,delimiter=',')
 writer.writerows(zip(time,force_data))
