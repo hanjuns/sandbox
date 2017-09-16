@@ -3,7 +3,7 @@ import csv
 import pickle
 
 # generate a time-force data file
-food_name = "carrot"
+food_name = "celery"
 input_filename = "Data(5.81ms)/"+food_name+"_steel fork.txt"
 output_file = open("Data(5.81ms)/"+food_name+".csv",'w')
 
@@ -14,7 +14,7 @@ with open(input_filename) as f:
 
 time = np.arange(0,5.81*len(force_data),5.81,dtype=np.float32)
 
-# print(len(time))
+print(len(time))
 # print(len(force_data))
 
 writer = csv.writer(output_file,delimiter=',')
